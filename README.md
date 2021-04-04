@@ -7,3 +7,6 @@ All configuration changes must be displayed in [config.json](https://github.com/
 * outDir - path to your output file/directory
 * gradient - will be applied to all icons
 * custom(optional) - used when you need some certain icons to have a gradient different from the one you set above
+## Installation
+Copy the repository ```git clone https://github.com/losbiw/svg-gradient.git```  
+Start executing the script ```yarn start``` or ```npm start```
