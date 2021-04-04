@@ -7,6 +7,11 @@ import { promises as fs } from 'fs';
 import Config from '../interfaces/Config.d';
 import { Gradient } from '../interfaces/Gradient';
 
+interface Resolved {
+    file: string,
+    output: string
+}
+
 const main = async(): Promise<void> => {
     const { base, outDir, gradient, directories: nested, custom: customIcons } = getConfig();
     const exists = await fs.stat(base);
@@ -57,7 +62,7 @@ const main = async(): Promise<void> => {
     }
 }
 
-const convertSvg = (filePath: string, output: string, gradient: Gradient) => {
+const convertSvg = (filePath: string, output: string, gradient: Gradient): void => {
     const { name, ext } = path.parse(filePath);
     const content = readSvg(filePath, ext);
 
@@ -80,7 +85,7 @@ const readSvg = (filePath: string, ext: string): string | Error => {
     else return Error('The file is not of ".svg" extension');
 }
 
-const resolvePaths = (base: string, outDir: string, name: string) => {
+const resolvePaths = (base: string, outDir: string, name: string): Resolved => {
     const file = path.resolve(base, name);
     const output = path.resolve(outDir, name);
 
