@@ -6,7 +6,8 @@
   "description": "An svg gradient loader with easily configurable and customizable options",
   "author": "Skorinov Vladislav <skorinov41@gmail.com>",
   "scripts": {
-    "start": "ts-node ./src/index.ts"
+    "start": "ts-node ./src/index.ts",
+    "test": "ts-node ./src/test.ts"
   },
   "devDependencies": {
     "@types/node": "^14.14.37",
