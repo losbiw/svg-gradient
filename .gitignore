@@ -1,5 +1,5 @@
 node_modules
 .DS_Store
-config.json
+config_original.json
 result_original
 example_original

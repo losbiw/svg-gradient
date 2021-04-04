@@ -1,0 +1,38 @@
+{
+    "base": "./example",
+    "outDir": "./result",
+    "gradient": {
+        "from": "0dc39f",
+        "to": "38ef7d"
+    },
+    "custom": {
+        "ui": {
+            "yellow.svg": {
+                "origin": "cross.svg",
+                "gradient": {
+                    "from": "fdfc47",
+                    "to": "fdc830"
+                }
+            },
+            "red.svg": {
+                "origin": "cross.svg",
+                "gradient": {
+                    "from": "D31027",
+                    "to": "EA384D"
+                }
+            },
+            "warning.svg": {
+                "gradient": {
+                    "from": "fdfc47",
+                    "to": "fdc830"
+                }
+            },
+            "download.svg": {
+                "gradient": {
+                    "from": "fdfc47",
+                    "to": "fdc830"
+                }
+            }
+        }
+    }
+}
