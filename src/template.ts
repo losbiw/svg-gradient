@@ -26,8 +26,8 @@ export const process = (path: string, id: string, gradient: Gradient): string =>
                 </mask>
             </defs>
             <g mask="${ `url(#${id})` }">
-                <rect className="original" x="0" y="0" width="${ width }" height="${ height }" fill="white" />
-                <rect className="gradient" x="0" y="0" width="${ width }" height="${ height }" fill="${ `url(${ startColor })` }" />
+                <rect class="original" x="0" y="0" width="${ width }" height="${ height }" fill="white" />
+                <rect class="gradient" x="0" y="0" width="${ width }" height="${ height }" fill="${ `url(${ startColor })` }" />
             </g>
         </svg>`;
     
