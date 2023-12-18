@@ -1,5 +1,5 @@
 # Svg gradient loader
-Easily customizable and useful for when one needs to apply gradients to SVG icons.
+Easily customizable script for automating applying gradients to SVG icons.
 ## Configuration
 All configuration changes must be displayed in [config.json](https://github.com/losbiw/svg-gradient/blob/master/config.json)
 * base - path to your svg file/directory containing svg files
